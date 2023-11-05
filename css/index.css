@@ -19,8 +19,8 @@
 .header{
     background-image: url('../images/landing-background.png');
     background-repeat: no-repeat;
-   background-size: cover;
-    width: 100%;
+    background-size: cover;
+    background-position: center;
     height: 40rem;
 }
 
