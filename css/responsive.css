@@ -13,12 +13,44 @@
 }
 
 @media screen and (max-width: 768px) {
-
+    .navbar__menu{
+        position: relative;
+    }
+    .navbar__list{
+        /* display: none; */
+        flex-direction: column;
+        background-color: rgb(95, 181, 174);
+        padding: 4rem;
+        position: absolute;
+        top: -2rem;
+        height: 100rem;
+        z-index: 20;
+        display: none;
+    }
+    .navbar__list-item{
+        margin-bottom: 1rem;
+    }
+    .navbar__btn{
+        margin-right: 2rem;
+        display: none;
+    }
+    .res-menu{
+        display: block;
+        margin-right: 2rem;
+    }
+    .register-btn{
+        display: block;
+    }
+    .navbar__logo{
+        margin-left: 1rem;
+    }
     
 }
 
 @media screen and (max-width: 576px) { 
 
+}
+@media screen and (max-width: 460px) { 
 }
 
 @media screen and (max-width: 350px) {

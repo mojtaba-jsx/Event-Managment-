@@ -76,5 +76,14 @@
     border-radius: 2rem;
     background-color:var(--mainColor);
     font-family: 'sarabun-medium', Courier, monospace;
+}
 
+.res-menu{
+    display: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all 400ms ease-in;
+}
+.register-btn{
+    display: none;
 }
