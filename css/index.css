@@ -1,5 +1,80 @@
+/* !Impors */
+@import './fonts.css';
+
 /* !Css Variables */
 :root{
-    --btnBackgroundColor: linear-gradient(89.7deg, #00FCE3 0.23%, #00D6FA 99.74%);
+    --mainBackgroundColor: linear-gradient(89.7deg, #00FCE3 0.23%, #00D6FA 99.74%);
+    --mainColor:#00FCE3;
+    --white:#fff
 }
 
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/*! ////////////////////////////// */
+    /*! Header Section Styles */
+/*! ////////////////////////////// */
+.header{
+    background-image: url('../images/landing-background.png');
+    background-repeat: no-repeat;
+   background-size: cover;
+    width: 100%;
+    height: 40rem;
+}
+
+.navbar__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 1rem; */
+}
+
+.navbar__logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navbar__logo-text{
+    font-family: 'sarabun-bold', Courier, monospace;
+    color: var(--mainColor);
+    font-size: 2rem;
+}
+
+.navbar__logo,
+.navbar__list,
+.navbar__btn{
+    margin-top: 2rem;
+}
+
+.navbar__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__list-item{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.navbar__list-link{
+    font-family: 'sarabun-medium', Courier, monospace;
+    color:#B9B9B9;
+}
+
+.navbar__list-link-active{
+    color: var(--white);
+}
+
+.navbar__btn-link{
+    color:  #0F0B10;
+    padding: 1rem 2.8rem;
+    border-radius: 2rem;
+    background-color:var(--mainColor);
+    font-family: 'sarabun-medium', Courier, monospace;
+
+}
