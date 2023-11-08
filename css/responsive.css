@@ -16,6 +16,9 @@
 }
 
 @media screen and (max-width: 940px) {
+    .header{
+        height: 74rem;
+    }
     .landing{
         flex-direction: column-reverse;
     }
