@@ -249,7 +249,7 @@
 .join-tech__box{
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .join-tech__box-left-title,.join-tech__box-right-title{
