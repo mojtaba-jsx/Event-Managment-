@@ -1,6 +1,8 @@
 
 @media screen and (max-width: 1400px) {
-
+    .landing__title,.landing__text,.landing__btns{
+        margin-left: 1rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -8,6 +10,26 @@
 }
 
 @media screen and (max-width: 992px) {
+    .landing__title{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .landing{
+        flex-direction: column-reverse;
+    }
+
+    .landing__btns{
+        flex-direction: column;
+    }
+
+    .landing__title,.landing__text{
+        text-align: center;
+    }
+    .landing__btn{
+        margin-bottom: 1rem;
+    }
 
 
 }
@@ -44,19 +66,37 @@
     .navbar__logo{
         margin-left: 1rem;
     }
+
+
     
 }
 
-@media screen and (max-width: 576px) { 
+@media screen and (max-width: 635px) { 
 
 }
+
+@media screen and (max-width: 617px) { 
+
+}
+
+@media screen and (max-width: 576px) { 
+    .landing__play-btn{
+        flex-direction: column;
+        width: 10rem;
+        
+    }
+}
+
 @media screen and (max-width: 460px) { 
+
 }
 
 @media screen and (max-width: 350px) {
 
     
 }
+
+
 @media screen and (max-width: 280px) {
 
 }
