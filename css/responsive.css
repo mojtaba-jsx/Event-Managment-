@@ -1,6 +1,6 @@
 
 @media screen and (max-width: 1400px) {
-    .landing__title,.landing__text,.landing__btns{
+    .landing__title,.landing__text,.landing__btns,.date__subtitle,.date__title{
         margin-left: 1rem;
     }
 }
@@ -28,6 +28,18 @@
         text-align: center;
     }
     .landing__btn{
+        margin-bottom: 1rem;
+    }
+    .date{
+        margin-top: 2rem;
+    }
+    .date__subtitle{
+        font-size: 1.8rem;
+    }
+    .date__right{
+        flex-wrap: wrap;
+    }
+    .date__timer{
         margin-bottom: 1rem;
     }
 
@@ -88,7 +100,9 @@
 }
 
 @media screen and (max-width: 460px) { 
-
+    .header{
+        height: 94rem;
+    }
 }
 
 @media screen and (max-width: 350px) {

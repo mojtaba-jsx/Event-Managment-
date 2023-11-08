@@ -22,7 +22,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 74rem;
+    height: 76rem;
     width: 100%;
 }
 
@@ -166,6 +166,8 @@
     padding-top: 2rem;
     padding-bottom: 4rem;
     margin-bottom: 4rem;
+    height: 4rem;
+
 }
 .date__wrapper{
     display: flex;
