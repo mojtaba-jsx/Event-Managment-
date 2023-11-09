@@ -13,6 +13,21 @@
     .landing__title{
         font-size: 2rem;
     }
+    .speakers__wrapper{
+        flex-direction: column;
+    }
+    .speakers__wrapper-left{
+        margin-bottom: 2rem;
+    }
+    .speakers__wrapper-right{
+        flex-direction: column;
+    }
+    .speakers__wrapper-image1{
+        margin-bottom: 1rem;
+    }
+    .speakers__wrapper-title,.speakers__wrapper-text{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 940px) {
