@@ -590,6 +590,7 @@
     color: var(--white);
     font-size: 2rem;
     margin-top: 1rem;
+    text-align: center;
 }
 
 .tickets__text{
