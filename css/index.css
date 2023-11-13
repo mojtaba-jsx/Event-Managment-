@@ -572,6 +572,10 @@
 
 }
 
+.event-detail__diary-day1,.event-detail__diary-day2,.event-detail__diary-day3{
+    cursor: pointer;
+}
+
 /*^ //////// Tickets Section Styles//////// */
 .tickets{
     background: linear-gradient(180deg, #232525 0%, #111617 100%);
