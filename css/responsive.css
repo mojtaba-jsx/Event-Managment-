@@ -133,8 +133,32 @@
         margin-left: 2rem;
     }
 
+}
 
-
+@media screen and (max-width: 840px) {
+    .participant__content{
+        flex-direction: column;
+    }
+    .participant__content-left-img{
+        margin-bottom: 2rem;
+    }
+    .participant__content-right-comma{
+        top: -2rem;
+        left: 6rem;
+    }
+    .participant__content-right-text{
+        margin-right: 6rem;
+    }
+    .participant__content-right-comma{
+        display: block;
+        margin: 0 auto;
+    }
+    .participant__content-right-btns{
+        margin-left: 11rem;
+    }
+    .participant__text{
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -253,6 +277,13 @@
     .tickets__cards{
         /* margin-left: 2rem; */
     }
+    .participant__content-right-btns{
+        margin-left: 8rem;
+    }
+    .participant__text{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 @media screen and (max-width: 370px) {
@@ -298,7 +329,9 @@
     .event-detail__img{
         margin-right: 3rem;
     }
-
+    .participant__content-right-btns{
+        margin-left: 6rem;
+    }
     
 }
 

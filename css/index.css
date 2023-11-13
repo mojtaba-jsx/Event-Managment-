@@ -710,6 +710,11 @@
     text-align: center;
 }
 
+.participant__content-left-img{
+    width: 100%;
+    height: auto;
+}
+
 .participant__text{
     font-family: 'sarabun-regular', Courier, monospace;
     color:#A5A6A7;
@@ -735,6 +740,8 @@
     margin-left: 6rem;
     text-align: justify;
     line-height: 2rem;
+    text-align: justify;
+    /* width: 20rem; */
 }
 
 .participant__content-right-comma{
