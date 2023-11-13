@@ -579,7 +579,6 @@
 /*^ //////// Tickets Section Styles//////// */
 .tickets{
     background: linear-gradient(180deg, #232525 0%, #111617 100%);
-    margin-bottom: 10rem;
 }
 
 .tickets__wrapper{
@@ -684,4 +683,100 @@
 
 .card__desc-svg{
     margin-right: 0.4rem;
+}
+
+/*^ //////// Participant Section Styles//////// */
+.participant{
+    background: linear-gradient(180deg, #232525 0%, #111617 100%);
+    margin-bottom: 4rem;
+}
+.participant__wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.participant__content{
+    margin: 0rem auto;
+    padding-bottom: 4rem;
+}
+
+.participant__title{
+    text-align: center;
+    font-family: 'sarabun-bold', Courier, monospace;
+    color: var(--white);
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.participant__text{
+    font-family: 'sarabun-regular', Courier, monospace;
+    color:#A5A6A7;
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+
+.participant__content{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.participant__content-right-text{
+    font-family: 'sarabun-regular', Courier, monospace;
+    color:#A5A6A7;
+    margin-top: 1rem;
+    text-align: center;
+    position: relative;
+    margin-left: 6rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.participant__content-right-comma{
+    position: absolute;
+    left: -4rem;
+}
+
+.participant__content-right-name{
+    color: var(--white);
+    font-family: 'sarabun-bold', Courier, monospace;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    display: block;
+}
+
+.participant__content-right-job{
+    color:  #C7C7C7;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.participant__content-right-btns{
+    display: flex;
+    margin-left: 6rem;
+    margin-top: 4rem;
+}
+
+.participant__content-right-btn{
+    border: 1px solid #424242;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    border-radius: 2rem;
+}
+.participant__content-right-btn-svg{
+    color: red;
+}
+
+.participant__content-right-btn:nth-child(2){
+    background-color: var(--mainColor);
 }
