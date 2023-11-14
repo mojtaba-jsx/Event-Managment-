@@ -10,6 +10,11 @@
     .event-detail__right{
         margin-right: 2rem;
     }
+
+    .upper-footer__wrapper,.sub-footer__wrapper{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -194,6 +199,16 @@
         margin-left: 1rem;
     }
 
+    .upper-footer__wrapper{
+        flex-direction: column;
+    }
+    .upper-footer-col1,.upper-footer-col2,.upper-footer-col3,.upper-footer-col4{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
 
     
 }
@@ -246,7 +261,16 @@
     .landing__play-btn{
         flex-direction: column;
         width: 10rem;
-        
+    }
+
+
+    .sub-footer__wrapper{
+        flex-direction: column;
+    }
+    .sub-footer__logo,.sub-footer__text,.sub-footer__icons{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2rem;
     }
 }
 @media screen and (max-width: 521px) { 
@@ -301,6 +325,13 @@
     .ticket__btn{
         width: 12rem;
     }
+
+    .upper-footer-col1-input1{
+        padding: 1rem 2rem;
+    }
+    .upper-footer-col1-link{
+        left: 12.8rem;
+    }
 }
 @media screen and (max-width: 350px) {
     .join-tech__wrapper-left-img{
@@ -336,6 +367,13 @@
 }
 
 
+@media screen and (max-width: 280px) {
+    .upper-footer-col1-link{
+        left: 10.8rem;
+    }
+}
+
+
 @media screen and (max-width: 310px) {
     .tickets__cards{
         width: 16rem;
@@ -355,6 +393,14 @@
 
     .event-detail__text{
         font-size: 1rem;
+    }
+
+    .sub-footer__text{
+        font-size: 0.8rem;
+    }
+
+    .upper-footer-col1-link{
+        left: 11rem;
     }
 
 }
