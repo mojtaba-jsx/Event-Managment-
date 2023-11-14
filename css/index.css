@@ -874,3 +874,22 @@
     font-family: 'sarabun-medium', Courier, monospace;
 
 }
+
+/*^ //////// Sub Footer Section Styles//////// */
+
+.sub-footer{
+    padding-bottom: 2rem;
+    border-top: 1px solid #292D2E;
+}
+
+.sub-footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.sub-footer__text{
+    color:  #525252;
+    font-family: 'sarabun-bold', Courier, monospace;
+
+}
