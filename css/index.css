@@ -228,7 +228,9 @@
     padding-top: 8rem;
     padding-bottom: 8rem;
     border: 1px solid;
-    background: linear-gradient(180deg, #232525 0%, #111617 100%);
+    /* background: linear-gradient(180deg, #232525 0%, #111617 100%); */
+    background-color: #111617;
+
 }
 .join-tech__wrapper{
     display: flex;
@@ -278,7 +280,9 @@
 .speakers{
     padding-top: 4rem;
    padding-bottom: 8rem;
-    background: linear-gradient(180deg, #232525 0%, #111617 100%);
+    /* background: linear-gradient(180deg, #232525 0%, #111617 100%); */
+    background-color: #111617;
+
 
 }
 
@@ -384,7 +388,9 @@
 
 /*^ //////// Event Detail  Section Styles//////// */
 .event-detail{
-    background: linear-gradient(180deg, #232525 0%, #111617 100%);
+    /* background: linear-gradient(180deg, #232525 0%, #111617 100%); */
+    background-color: #111617;
+
 }
 .event-detail__wrapper{
     /* margin-bottom: 10rem; */
@@ -578,7 +584,9 @@
 
 /*^ //////// Tickets Section Styles//////// */
 .tickets{
-    background: linear-gradient(180deg, #232525 0%, #111617 100%);
+    /* background: linear-gradient(180deg, #232525 0%, #111617 100%); */
+    background-color: #111617;
+
 }
 
 .tickets__wrapper{
@@ -687,8 +695,9 @@
 
 /*^ //////// Participant Section Styles//////// */
 .participant{
-    background: linear-gradient(180deg, #232525 0%, #111617 100%);
-    margin-bottom: 4rem;
+    /* background: linear-gradient(180deg, #232525 0%, #111617 100%); */
+    background-color: #111617;
+
 }
 .participant__wrapper{
     display: flex;
@@ -786,4 +795,82 @@
 
 .participant__content-right-btn:nth-child(2){
     background-color: var(--mainColor);
+}
+
+
+/*! ////////////////////////////// */
+    /*! Footer Section Styles */
+/*! ////////////////////////////// */
+
+/*^ //////// Upper Footer Section Styles//////// */
+
+.footer{
+    background-color: #111617;
+}
+.upper-footer{
+    margin-bottom: 8rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+.upper-footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper-footer-col1-title{
+    font-family: 'sarabun-bold', Courier, monospace;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.upper-footer-col1-text{
+    font-family: 'sarabun-regular', Courier, monospace;
+    color:#A5A6A7;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.upper-footer-col1-mail{
+    position: relative;
+}
+
+.upper-footer-col1-input1{
+    padding: 1rem 4.5rem;
+    position: relative;
+    border-radius: 2rem;
+    border: none;
+    background-color:  #292D2E;
+    outline:none;
+}
+
+
+.upper-footer-col1-link{
+    background-color: var(--mainColor);
+    border: 1px solid #424242;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    position: absolute;
+    left: 16.5rem;
+    bottom: 0.5rem;
+}
+
+.upper-footer-col2-title,.upper-footer-col3-title,.upper-footer-col4-title{
+    color: var(--white);
+    font-family: 'sarabun-regular', Courier, monospace;
+    margin-bottom: 2rem;
+}
+
+.upper-footer-col2-item,.upper-footer-col3-item,.upper-footer-col4-item{
+    margin-bottom: 1rem;
+}
+
+.upper-footer-col2-item-link,.upper-footer-col3-item-link,.upper-footer-col4-item-link{
+    color:#A5A6A7;
+    font-family: 'sarabun-medium', Courier, monospace;
+
 }
