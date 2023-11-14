@@ -1,579 +1,1191 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>Event-Managment</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!--! Start Header Section -->
     <header class="header">
-        <div class="container">
-            <section class="navbar">
-                <nav class="navbar__menu">
-                    <div class="navbar__logo">
-                        <svg class="navbar__logo-icon" width="22" height="22" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="2.5" width="2.5" height="11" rx="0.2" transform="rotate(-90 0 2.5)" fill="url(#paint0_linear_125_495)"/>
-                            <rect y="9" width="2.5" height="10" rx="0.2" transform="rotate(-90 0 9)" fill="url(#paint1_linear_125_495)"/>
-                            <rect y="15.5" width="2.5" height="11" rx="0.2" transform="rotate(-90 0 15.5)" fill="url(#paint2_linear_125_495)"/>
-                            <defs>
-                            <linearGradient id="paint0_linear_125_495" x1="-7.53133e-10" y1="8.7" x2="2.50084" y2="8.697" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00FCE3"/>
-                            <stop offset="1" stop-color="#00D6FA"/>
-                            </linearGradient>
-                            <linearGradient id="paint1_linear_125_495" x1="-7.53133e-10" y1="14.6364" x2="2.50084" y2="14.6331" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00FCE3"/>
-                            <stop offset="1" stop-color="#00D6FA"/>
-                            </linearGradient>
-                            <linearGradient id="paint2_linear_125_495" x1="-7.53133e-10" y1="21.7" x2="2.50084" y2="21.697" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00FCE3"/>
-                            <stop offset="1" stop-color="#00D6FA"/>
-                            </linearGradient>
-                            </defs>
-                        </svg>
-                        <span class="navbar__logo-text">ventu</span>    
-                    </div>
-                    <ul class="navbar__list">
-                        <li class="navbar__list-item">
-                            <a href="#" class="navbar__list-link navbar__list-link-active">Home</a>
-                        </li>
-                        <li class="navbar__list-item">
-                            <a href="#" class="navbar__list-link">Speakers</a>
-                        </li>
-                        <li class="navbar__list-item">
-                            <a href="#" class="navbar__list-link">Ticket</a>
-                        </li>
-                        <li class="navbar__list-item">
-                            <a href="#" class="navbar__list-link">Schedule</a>
-                        </li>
-                        <li class="navbar__list-item">
-                            <a href="#" class="navbar__list-link">Contact</a>
-                        </li>
-                        <li class="navbar__list-item">
-                            <a href="#" class="navbar__list-link register-btn">Register</a>
-                        </li>
-                    </ul>
-                    <div class="navbar__btn">
-                        <a href="#" class="navbar__btn-link">Register</a>
-                    </div>
-                    <div class="res-menu">
-                        <svg class="" width="22" height="22" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="2.5" width="2.5" height="11" rx="0.2" transform="rotate(-90 0 2.5)" fill="url(#paint0_linear_125_495)"/>
-                            <rect y="9" width="2.5" height="10" rx="0.2" transform="rotate(-90 0 9)" fill="url(#paint1_linear_125_495)"/>
-                            <rect y="15.5" width="2.5" height="11" rx="0.2" transform="rotate(-90 0 15.5)" fill="url(#paint2_linear_125_495)"/>
-                            <defs>
-                            <linearGradient id="paint0_linear_125_495" x1="-7.53133e-10" y1="8.7" x2="2.50084" y2="8.697" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00FCE3"/>
-                            <stop offset="1" stop-color="#00D6FA"/>
-                            </linearGradient>
-                            <linearGradient id="paint1_linear_125_495" x1="-7.53133e-10" y1="14.6364" x2="2.50084" y2="14.6331" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00FCE3"/>
-                            <stop offset="1" stop-color="#00D6FA"/>
-                            </linearGradient>
-                            <linearGradient id="paint2_linear_125_495" x1="-7.53133e-10" y1="21.7" x2="2.50084" y2="21.697" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00FCE3"/>
-                            <stop offset="1" stop-color="#00D6FA"/>
-                            </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                </nav>
-            </section>
-
-            <section class="landing">
-                <div class="landing__left">
-                    <h1 class="landing__title">International Digital <br> Conference For Designers</h1>
-                    <p class="landing__text">
-                        A conference is a gathering of many people who talk about a specific <br> subject or topic. People meet to confer about a theme.
-                    </p>
-                    <div class="landing__btns">
-                        <a href="#" class="landing__btn">Get Ticket</a>
-                        <a href="#" class="landing__play-btn">
-                            Watch The Teaser
-                            <svg class="landing__play-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75ZM2.25 12C2.25 6.61522 6.61522 2.25 12 2.25C17.3848 2.25 21.75 6.61522 21.75 12C21.75 17.3848 17.3848 21.75 12 21.75C6.61522 21.75 2.25 17.3848 2.25 12Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1461 8.33875C10.39 8.20823 10.6859 8.22254 10.916 8.37596L15.416 11.376C15.6247 11.5151 15.75 11.7492 15.75 12C15.75 12.2508 15.6247 12.4849 15.416 12.624L10.916 15.624C10.6859 15.7775 10.39 15.7918 10.1461 15.6613C9.90224 15.5307 9.75 15.2766 9.75 15V9C9.75 8.7234 9.90224 8.46926 10.1461 8.33875ZM11.25 10.4014V13.5986L13.6479 12L11.25 10.4014Z" fill="white"/>
-                                </svg>
-                                
-                        </a>
-                    </div>
-                </div>
-                <div class="landing__right">
-                    <div class="landing__right-img">
-                        <img src="./images/the speaker.png" alt="" class="landing__right-image">
-                    </div>
-                </div>
-      
-            </section>
-        </div>
-        <section class="date">
-            <div class="container">
-                <div class="date__wrapper">
-                    <div class="date__left">
-                        <h3 class="date__title">Conference Date</h3>
-                        <h2 class="date__subtitle">Count Every Second <br> Until the Event</h2>
-                    </div>
-        
-                    <div class="date__right">
-                        <div class="date__timer">
-                            <span class="date__timer-num">30</span>
-                            <span class="date__timer-text">Days</span>
-                        </div>
-                        <div class="date__timer">
-                            <span class="date__timer-num">10</span>
-                            <span class="date__timer-text">Hrs</span>
-                        </div>
-                        <div class="date__timer">
-                            <span class="date__timer-num">20</span>
-                            <span class="date__timer-text">Mins</span>
-                        </div>
-                        <div class="date__timer">
-                            <span class="date__timer-num">50</span>
-                            <span class="date__timer-text">Secs</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <section class="navbar">
+          <nav class="navbar__menu">
+            <div class="navbar__logo">
+              <svg
+                class="navbar__logo-icon"
+                width="22"
+                height="22"
+                viewBox="0 0 11 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  y="2.5"
+                  width="2.5"
+                  height="11"
+                  rx="0.2"
+                  transform="rotate(-90 0 2.5)"
+                  fill="url(#paint0_linear_125_495)"
+                />
+                <rect
+                  y="9"
+                  width="2.5"
+                  height="10"
+                  rx="0.2"
+                  transform="rotate(-90 0 9)"
+                  fill="url(#paint1_linear_125_495)"
+                />
+                <rect
+                  y="15.5"
+                  width="2.5"
+                  height="11"
+                  rx="0.2"
+                  transform="rotate(-90 0 15.5)"
+                  fill="url(#paint2_linear_125_495)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_125_495"
+                    x1="-7.53133e-10"
+                    y1="8.7"
+                    x2="2.50084"
+                    y2="8.697"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#00FCE3" />
+                    <stop offset="1" stop-color="#00D6FA" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_125_495"
+                    x1="-7.53133e-10"
+                    y1="14.6364"
+                    x2="2.50084"
+                    y2="14.6331"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#00FCE3" />
+                    <stop offset="1" stop-color="#00D6FA" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint2_linear_125_495"
+                    x1="-7.53133e-10"
+                    y1="21.7"
+                    x2="2.50084"
+                    y2="21.697"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#00FCE3" />
+                    <stop offset="1" stop-color="#00D6FA" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="navbar__logo-text">ventu</span>
             </div>
+            <ul class="navbar__list">
+              <li class="navbar__list-item">
+                <a href="#" class="navbar__list-link navbar__list-link-active"
+                  >Home</a
+                >
+              </li>
+              <li class="navbar__list-item">
+                <a href="#" class="navbar__list-link">Speakers</a>
+              </li>
+              <li class="navbar__list-item">
+                <a href="#" class="navbar__list-link">Ticket</a>
+              </li>
+              <li class="navbar__list-item">
+                <a href="#" class="navbar__list-link">Schedule</a>
+              </li>
+              <li class="navbar__list-item">
+                <a href="#" class="navbar__list-link">Contact</a>
+              </li>
+              <li class="navbar__list-item">
+                <a href="#" class="navbar__list-link register-btn">Register</a>
+              </li>
+            </ul>
+            <div class="navbar__btn">
+              <a href="#" class="navbar__btn-link">Register</a>
+            </div>
+            <div class="res-menu">
+              <svg
+                class=""
+                width="22"
+                height="22"
+                viewBox="0 0 11 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  y="2.5"
+                  width="2.5"
+                  height="11"
+                  rx="0.2"
+                  transform="rotate(-90 0 2.5)"
+                  fill="url(#paint0_linear_125_495)"
+                />
+                <rect
+                  y="9"
+                  width="2.5"
+                  height="10"
+                  rx="0.2"
+                  transform="rotate(-90 0 9)"
+                  fill="url(#paint1_linear_125_495)"
+                />
+                <rect
+                  y="15.5"
+                  width="2.5"
+                  height="11"
+                  rx="0.2"
+                  transform="rotate(-90 0 15.5)"
+                  fill="url(#paint2_linear_125_495)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_125_495"
+                    x1="-7.53133e-10"
+                    y1="8.7"
+                    x2="2.50084"
+                    y2="8.697"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#00FCE3" />
+                    <stop offset="1" stop-color="#00D6FA" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_125_495"
+                    x1="-7.53133e-10"
+                    y1="14.6364"
+                    x2="2.50084"
+                    y2="14.6331"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#00FCE3" />
+                    <stop offset="1" stop-color="#00D6FA" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint2_linear_125_495"
+                    x1="-7.53133e-10"
+                    y1="21.7"
+                    x2="2.50084"
+                    y2="21.697"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#00FCE3" />
+                    <stop offset="1" stop-color="#00D6FA" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </nav>
         </section>
+
+        <section class="landing">
+          <div class="landing__left">
+            <h1 class="landing__title">
+              International Digital <br />
+              Conference For Designers
+            </h1>
+            <p class="landing__text">
+              A conference is a gathering of many people who talk about a
+              specific <br />
+              subject or topic. People meet to confer about a theme.
+            </p>
+            <div class="landing__btns">
+              <a href="#" class="landing__btn">Get Ticket</a>
+              <a href="#" class="landing__play-btn">
+                Watch The Teaser
+                <svg
+                  class="landing__play-icon"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75ZM2.25 12C2.25 6.61522 6.61522 2.25 12 2.25C17.3848 2.25 21.75 6.61522 21.75 12C21.75 17.3848 17.3848 21.75 12 21.75C6.61522 21.75 2.25 17.3848 2.25 12Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.1461 8.33875C10.39 8.20823 10.6859 8.22254 10.916 8.37596L15.416 11.376C15.6247 11.5151 15.75 11.7492 15.75 12C15.75 12.2508 15.6247 12.4849 15.416 12.624L10.916 15.624C10.6859 15.7775 10.39 15.7918 10.1461 15.6613C9.90224 15.5307 9.75 15.2766 9.75 15V9C9.75 8.7234 9.90224 8.46926 10.1461 8.33875ZM11.25 10.4014V13.5986L13.6479 12L11.25 10.4014Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="landing__right">
+            <div class="landing__right-img">
+              <img
+                src="./images/the speaker.png"
+                alt=""
+                class="landing__right-image"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="date">
+        <div class="container">
+          <div class="date__wrapper">
+            <div class="date__left">
+              <h3 class="date__title">Conference Date</h3>
+              <h2 class="date__subtitle">
+                Count Every Second <br />
+                Until the Event
+              </h2>
+            </div>
+
+            <div class="date__right">
+              <div class="date__timer">
+                <span class="date__timer-num">30</span>
+                <span class="date__timer-text">Days</span>
+              </div>
+              <div class="date__timer">
+                <span class="date__timer-num">10</span>
+                <span class="date__timer-text">Hrs</span>
+              </div>
+              <div class="date__timer">
+                <span class="date__timer-num">20</span>
+                <span class="date__timer-text">Mins</span>
+              </div>
+              <div class="date__timer">
+                <span class="date__timer-num">50</span>
+                <span class="date__timer-text">Secs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <!--! End Header Section -->
-    
-    
+
     <!--^ Start Main Section -->
-        <main class="main">
-            <section class="join-tech">
-                <div class="container">
-                    <div class="join-tech__wrapper">
-                        <div class="join-tech__wrapper-left">
-                            <img class="join-tech__wrapper-left-img" src="./images/startup-background.png" alt="image">
-                        </div>
-                        <div class="join-tech__wrapper-right">
-                            <h3 class="join-tech__title">Join Tech Startup <br> Confernece 2022</h3>
-                            <p class="join-tech__text">We provide a wide range of retreat experiences and all group <br> packages are completely customizable in order to meet your <br>specific needs as an organization.</p>
-                            <div class="join-tech__box">
-                                <div class="join-tech__box-left">
-                                    <h4 class="join-tech__box-left-title">Great Speaker</h4>
-                                    <p class="join-tech__box-left-text">A good speaker touches you <br> good speaker makes you listen </p>
-                                </div>
-
-                                <div class="join-tech__box-right">
-                                    <h4 class="join-tech__box-right-title">Participants</h4>
-                                    <p class="join-tech__box-right-text">The Event Participant page is <br>found in the People Lists folder </p>
-                                </div>
-                            </div>
-                            <a href="#" class="join-tech__btn">Register Now</a>
-                        </div>
-                    </div>
+    <main class="main">
+      <section class="join-tech">
+        <div class="container">
+          <div class="join-tech__wrapper">
+            <div class="join-tech__wrapper-left">
+              <img
+                class="join-tech__wrapper-left-img"
+                src="./images/startup-background.png"
+                alt="image"
+              />
+            </div>
+            <div class="join-tech__wrapper-right">
+              <h3 class="join-tech__title">
+                Join Tech Startup <br />
+                Confernece 2022
+              </h3>
+              <p class="join-tech__text">
+                We provide a wide range of retreat experiences and all group
+                <br />
+                packages are completely customizable in order to meet your
+                <br />specific needs as an organization.
+              </p>
+              <div class="join-tech__box">
+                <div class="join-tech__box-left">
+                  <h4 class="join-tech__box-left-title">Great Speaker</h4>
+                  <p class="join-tech__box-left-text">
+                    A good speaker touches you <br />
+                    good speaker makes you listen
+                  </p>
                 </div>
-            </section>
 
-            <section class="speakers">
-                <div class="container">
-                    <div class="speakers__wrapper">
-                        <div class="speakers__wrapper-left">
-                            <h3 class="speakers__wrapper-title">Meet The Increadible <br> Speaker</h3>
-                            <p class="speakers__wrapper-text">Motivate the team. Book now. Concepts: <br> Keynotes, master classes, motivational talks</p>
-                        </div>
-
-                        <div class="speakers__wrapper-right">
-                            <div class="speakers__wrapper-image1">
-                                <h5 class="speaker__name">Brooklyn Simmons</h5>
-                                <p class="speaker__job">Senior UX Designer</p>
-                                <a href="#" class="speaker__link">See Speaker Info </a>
-                            </div>
-                            <div class="speakers__wrapper-image2">
-                                <h5 class="speaker__name">Brooklyn Simmons</h5>
-                                <p class="speaker__job">Senior UX Designer</p>
-                                <a href="#" class="speaker__link">See Speaker Info </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="join-tech__box-right">
+                  <h4 class="join-tech__box-right-title">Participants</h4>
+                  <p class="join-tech__box-right-text">
+                    The Event Participant page is <br />found in the People
+                    Lists folder
+                  </p>
                 </div>
-            </section>
+              </div>
+              <a href="#" class="join-tech__btn">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section class="event-detail">
-                <div class="container">
-                    <div class="event-detail__wrapper">
-                        <div class="event-detail__left">
-                            <h2 class="event-detail__title">Schedule and <br> Event Details</h2>
-                            <p class="event-detail__text">Event scheduling is the activity of finding <br> a suitable time for an event such as <br> meeting, conference, trip, etc.</p>
-                            <a href="#" class="event-detail__btn">Download Schedule</a>
-                            <img src="./images/event-detail.png" alt="event" class="event-detail__img">
-                        </div>
+      <section class="speakers">
+        <div class="container">
+          <div class="speakers__wrapper">
+            <div class="speakers__wrapper-left">
+              <h3 class="speakers__wrapper-title">
+                Meet The Increadible <br />
+                Speaker
+              </h3>
+              <p class="speakers__wrapper-text">
+                Motivate the team. Book now. Concepts: <br />
+                Keynotes, master classes, motivational talks
+              </p>
+            </div>
 
-                        <div class="event-detail__right">
-                            <div class="event-detail__diary">
-                                <div class="event-detail__diary-day1">
-                                    <span class="diary-day1-title diary-active">First Day</span>
-                                    <span class="diary-day1-text diary-active">03 March, Tuesday</span>
-                                </div>
-                                <div class="event-detail__diary-day2">
-                                    <span class="diary-day2-title">Secind Day</span>
-                                    <span class="diary-day2-text">03 March, Tuesday</span>
-                                </div>
-                                <div class="event-detail__diary-day3">
-                                    <span class="diary-day3-title">Thirth Day</span>
-                                    <span class="diary-day3-text">03 March, Tuesday</span>
-                                </div>
-                            </div>
+            <div class="speakers__wrapper-right">
+              <div class="speakers__wrapper-image1">
+                <h5 class="speaker__name">Brooklyn Simmons</h5>
+                <p class="speaker__job">Senior UX Designer</p>
+                <a href="#" class="speaker__link">See Speaker Info </a>
+              </div>
+              <div class="speakers__wrapper-image2">
+                <h5 class="speaker__name">Brooklyn Simmons</h5>
+                <p class="speaker__job">Senior UX Designer</p>
+                <a href="#" class="speaker__link">See Speaker Info </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                            <div class="event-detail__contents">
-                                <div class="event-detail__contents-col1">
-                                    <div class="event-detail__contents-col1-box">
-                                        <span class="event-detail__contents-col1-box-text">
-                                            11:00 AM - 11:30 AM
-                                        </span>
-                                        <span class="event-detail__contents-col1-box-shape">1</span>
-                                    </div>
-                                    <div class="event-detail__contents-col1-box">
-                                        <span class="event-detail__contents-col1-box-text">
-                                            11:00 AM - 11:30 AM
-                                        </span>
-                                        <span class="event-detail__contents-col1-box-shape">2</span>
-                                    </div>
-                                    <div class="event-detail__contents-col1-box">
-                                        <span class="event-detail__contents-col1-box-text">
-                                            11:00 AM - 11:30 AM
-                                        </span>
-                                        <span class="event-detail__contents-col1-box-shape">3</span>
-                                    </div>
-                                    <div class="event-detail__contents-col1-box">
-                                        <span class="event-detail__contents-col1-box-text">
-                                            11:00 AM - 11:30 AM
-                                        </span>
-                                        <span class="event-detail__contents-col1-box-shape">4</span>
-                                    </div>
-                                </div>
+      <section class="event-detail">
+        <div class="container">
+          <div class="event-detail__wrapper">
+            <div class="event-detail__left">
+              <h2 class="event-detail__title">
+                Schedule and <br />
+                Event Details
+              </h2>
+              <p class="event-detail__text">
+                Event scheduling is the activity of finding <br />
+                a suitable time for an event such as <br />
+                meeting, conference, trip, etc.
+              </p>
+              <a href="#" class="event-detail__btn">Download Schedule</a>
+              <img
+                src="./images/event-detail.png"
+                alt="event"
+                class="event-detail__img"
+              />
+            </div>
 
-
-                                <div class="event-detail__contents-col3">
-                                    <div class="event-detail__contents-col3-info">
-                                        <h6 class="event-detail__contents-col3-info-title">
-                                            Registration
-                                        </h6>
-                                        <p class="event-detail__contents-col3-info-text">
-                                            Registration is at the heart of meetings and events. It's is how event <br> professionals secure attendees and thus how you secure,......
-                                        </p>
-                                    </div>
-                                    <div class="event-detail__contents-col3-info">
-                                        <h6 class="event-detail__contents-col3-info-title">
-                                            User Research
-                                        </h6>
-                                        <p class="event-detail__contents-col3-info-text">
-                                            Registration is at the heart of meetings and events. It's is how event <br> professionals secure attendees and thus how you secure,......
-                                        </p>
-                                    </div>
-                                    <div class="event-detail__contents-col3-info">
-                                        <h6 class="event-detail__contents-col3-info-title">
-                                            Lunch Break
-                                        </h6>
-                                        <p class="event-detail__contents-col3-info-text">
-                                            Registration is at the heart of meetings and events. It's is how event <br> professionals secure attendees and thus how you secure,......
-                                        </p>
-                                    </div>
-                                    <div class="event-detail__contents-col3-info">
-                                        <h6 class="event-detail__contents-col3-info-title">
-                                            Speaker Speech
-                                        </h6>
-                                        <p class="event-detail__contents-col3-info-text">
-                                            Registration is at the heart of meetings and events. It's is how event <br> professionals secure attendees and thus how you secure,......
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="event-detail__right">
+              <div class="event-detail__diary">
+                <div class="event-detail__diary-day1">
+                  <span class="diary-day1-title diary-active">First Day</span>
+                  <span class="diary-day1-text diary-active"
+                    >03 March, Tuesday</span
+                  >
                 </div>
-            </section>
-
-            <section class="tickets">
-                <div class="container">
-                    <div class="tickets__wrapper">
-                        <h5 class="tickets__title">Pricing Tickets</h5>
-                        <p class="tickets__text">View our local event planners or get free estimates from pros near you.</p>
-                        <div class="tickets__cards">
-                            <div class="tickets__card">
-                                <span class="card__title">Regular</span>
-                                <span class="card__price">$150.00</span>
-                                <ul class="card__descriptions">
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            1 days access to the conference
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Music, launch and snack
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Meet event speaker
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Live video online access
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Get a certificate
-                                    </li>
-                                </ul>
-                                <a href="#" class="ticket__btn">
-                                    Buy Ticket Now
-                                </a>
-                            </div>
-                            <div class="tickets__card">
-                                <span class="card__title">Regular</span>
-                                <span class="card__price">$150.00</span>
-                                <ul class="card__descriptions">
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            1 days access to the conference
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Music, launch and snack
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Meet event speaker
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Live video online access
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Get a certificate
-                                    </li>
-                                </ul>
-                                <a href="#" class="ticket__btn">
-                                    Buy Ticket Now
-                                </a>
-                            </div>
-                            <div class="tickets__card">
-                                <span class="card__title">Regular</span>
-                                <span class="card__price">$150.00</span>
-                                <ul class="card__descriptions">
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            1 days access to the conference
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Music, launch and snack
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Meet event speaker
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Live video online access
-                                    </li>
-                                    <li class="card__desc">
-                                        <svg class="card__desc-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="8" cy="8" r="8" fill="#525252"/>
-                                            <path d="M11 6L7.5625 9.4375L6 7.875" stroke="url(#paint0_linear_125_286)" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                            <linearGradient id="paint0_linear_125_286" x1="6" y1="7.9375" x2="11.0014" y2="7.89911" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00FCE3"/>
-                                            <stop offset="1" stop-color="#00D6FA"/>
-                                            </linearGradient>
-                                            </defs>
-                                            </svg>
-                                            Get a certificate
-                                    </li>
-                                </ul>
-                                <a href="#" class="ticket__btn">
-                                    Buy Ticket Now
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="event-detail__diary-day2">
+                  <span class="diary-day2-title">Secind Day</span>
+                  <span class="diary-day2-text">03 March, Tuesday</span>
                 </div>
-            </section>
-
-            <section class="participant">
-                <div class="container">
-                    <div class="participant__wrapper">
-                        <h4 class="participant__title">Our Participant Say</h4>
-                        <p class="participant__text">Hear from some of our clients about their experience working <br> with Design Meeting & Event Management</p>
-                        <div class="participant__content">
-                            <div class="participant__content-left">
-                                <img src="./images/participant.png" alt="participant" class="participant__content-left-img">
-                            </div>
-
-                            <div class="participant__content-right">
-                                <p class="participant__content-right-text">
-                                    <img class="participant__content-right-comma" src="./icons/comma.png" alt="img">
-                                    Thank you for the  outstanding work of the  Design <br> Conferences & Events group. We had a wonderful <br> time and could not imagine pulling off our meeting <br> without the  guidance of your staff.  They are an <br> amazing team!
-                                    Thank you for a hugely successful event! 
-                                </p>
-                                <span class="participant__content-right-name">
-                                    Marvin McKinney
-                                </span>
-                                <span class="participant__content-right-job">
-                                    Senior UX Designer
-                                </span>
-                                <div class="participant__content-right-btns">
-                                    <a href="#" class="participant__content-right-btn">
-                                        <svg  class="participant__content-right-svg" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.8584 5.64258L1.68728 11.8137L7.8584 17.9848" stroke="#424242" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M24.3137 11.8137H1.68629" stroke="#424242" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>   
-                                    </a>
-                                    <a href="#" class="participant__content-right-btn">
-                                        <svg class="participant__content-right-svg" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.1416 5.64258L24.3127 11.8137L18.1416 17.9848" stroke="#111617" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M1.68629 11.8137H24.3137" stroke="#111617" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="event-detail__diary-day3">
+                  <span class="diary-day3-title">Thirth Day</span>
+                  <span class="diary-day3-text">03 March, Tuesday</span>
                 </div>
-            </section>
-        </main>
+              </div>
+
+              <div class="event-detail__contents">
+                <div class="event-detail__contents-col1">
+                  <div class="event-detail__contents-col1-box">
+                    <span class="event-detail__contents-col1-box-text">
+                      11:00 AM - 11:30 AM
+                    </span>
+                    <span class="event-detail__contents-col1-box-shape">1</span>
+                  </div>
+                  <div class="event-detail__contents-col1-box">
+                    <span class="event-detail__contents-col1-box-text">
+                      11:00 AM - 11:30 AM
+                    </span>
+                    <span class="event-detail__contents-col1-box-shape">2</span>
+                  </div>
+                  <div class="event-detail__contents-col1-box">
+                    <span class="event-detail__contents-col1-box-text">
+                      11:00 AM - 11:30 AM
+                    </span>
+                    <span class="event-detail__contents-col1-box-shape">3</span>
+                  </div>
+                  <div class="event-detail__contents-col1-box">
+                    <span class="event-detail__contents-col1-box-text">
+                      11:00 AM - 11:30 AM
+                    </span>
+                    <span class="event-detail__contents-col1-box-shape">4</span>
+                  </div>
+                </div>
+
+                <div class="event-detail__contents-col3">
+                  <div class="event-detail__contents-col3-info">
+                    <h6 class="event-detail__contents-col3-info-title">
+                      Registration
+                    </h6>
+                    <p class="event-detail__contents-col3-info-text">
+                      Registration is at the heart of meetings and events. It's
+                      is how event <br />
+                      professionals secure attendees and thus how you
+                      secure,......
+                    </p>
+                  </div>
+                  <div class="event-detail__contents-col3-info">
+                    <h6 class="event-detail__contents-col3-info-title">
+                      User Research
+                    </h6>
+                    <p class="event-detail__contents-col3-info-text">
+                      Registration is at the heart of meetings and events. It's
+                      is how event <br />
+                      professionals secure attendees and thus how you
+                      secure,......
+                    </p>
+                  </div>
+                  <div class="event-detail__contents-col3-info">
+                    <h6 class="event-detail__contents-col3-info-title">
+                      Lunch Break
+                    </h6>
+                    <p class="event-detail__contents-col3-info-text">
+                      Registration is at the heart of meetings and events. It's
+                      is how event <br />
+                      professionals secure attendees and thus how you
+                      secure,......
+                    </p>
+                  </div>
+                  <div class="event-detail__contents-col3-info">
+                    <h6 class="event-detail__contents-col3-info-title">
+                      Speaker Speech
+                    </h6>
+                    <p class="event-detail__contents-col3-info-text">
+                      Registration is at the heart of meetings and events. It's
+                      is how event <br />
+                      professionals secure attendees and thus how you
+                      secure,......
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tickets">
+        <div class="container">
+          <div class="tickets__wrapper">
+            <h5 class="tickets__title">Pricing Tickets</h5>
+            <p class="tickets__text">
+              View our local event planners or get free estimates from pros near
+              you.
+            </p>
+            <div class="tickets__cards">
+              <div class="tickets__card">
+                <span class="card__title">Regular</span>
+                <span class="card__price">$150.00</span>
+                <ul class="card__descriptions">
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    1 days access to the conference
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Music, launch and snack
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Meet event speaker
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Live video online access
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Get a certificate
+                  </li>
+                </ul>
+                <a href="#" class="ticket__btn"> Buy Ticket Now </a>
+              </div>
+              <div class="tickets__card">
+                <span class="card__title">Regular</span>
+                <span class="card__price">$150.00</span>
+                <ul class="card__descriptions">
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    1 days access to the conference
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Music, launch and snack
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Meet event speaker
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Live video online access
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Get a certificate
+                  </li>
+                </ul>
+                <a href="#" class="ticket__btn"> Buy Ticket Now </a>
+              </div>
+              <div class="tickets__card">
+                <span class="card__title">Regular</span>
+                <span class="card__price">$150.00</span>
+                <ul class="card__descriptions">
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    1 days access to the conference
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Music, launch and snack
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Meet event speaker
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Live video online access
+                  </li>
+                  <li class="card__desc">
+                    <svg
+                      class="card__desc-svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="8" cy="8" r="8" fill="#525252" />
+                      <path
+                        d="M11 6L7.5625 9.4375L6 7.875"
+                        stroke="url(#paint0_linear_125_286)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_125_286"
+                          x1="6"
+                          y1="7.9375"
+                          x2="11.0014"
+                          y2="7.89911"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00FCE3" />
+                          <stop offset="1" stop-color="#00D6FA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Get a certificate
+                  </li>
+                </ul>
+                <a href="#" class="ticket__btn"> Buy Ticket Now </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="participant">
+        <div class="container">
+          <div class="participant__wrapper">
+            <h4 class="participant__title">Our Participant Say</h4>
+            <p class="participant__text">
+              Hear from some of our clients about their experience working
+              <br />
+              with Design Meeting & Event Management
+            </p>
+            <div class="participant__content">
+              <div class="participant__content-left">
+                <img
+                  src="./images/participant.png"
+                  alt="participant"
+                  class="participant__content-left-img"
+                />
+              </div>
+
+              <div class="participant__content-right">
+                <p class="participant__content-right-text">
+                  <img
+                    class="participant__content-right-comma"
+                    src="./icons/comma.png"
+                    alt="img"
+                  />
+                  Thank you for the outstanding work of the Design <br />
+                  Conferences & Events group. We had a wonderful <br />
+                  time and could not imagine pulling off our meeting <br />
+                  without the guidance of your staff. They are an <br />
+                  amazing team! Thank you for a hugely successful event!
+                </p>
+                <span class="participant__content-right-name">
+                  Marvin McKinney
+                </span>
+                <span class="participant__content-right-job">
+                  Senior UX Designer
+                </span>
+                <div class="participant__content-right-btns">
+                  <a href="#" class="participant__content-right-btn">
+                    <svg
+                      class="participant__content-right-svg"
+                      width="26"
+                      height="24"
+                      viewBox="0 0 26 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.8584 5.64258L1.68728 11.8137L7.8584 17.9848"
+                        stroke="#424242"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M24.3137 11.8137H1.68629"
+                        stroke="#424242"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="participant__content-right-btn">
+                    <svg
+                      class="participant__content-right-svg"
+                      width="26"
+                      height="24"
+                      viewBox="0 0 26 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.1416 5.64258L24.3127 11.8137L18.1416 17.9848"
+                        stroke="#111617"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.68629 11.8137H24.3137"
+                        stroke="#111617"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!--^ End Main Section -->
 
+    <!--& Start Footer Section -->
+    <footer class="footer">
+      <section class="upper-footer">
+        <div class="container">
+          <div class="upper-footer__wrapper">
+            <div class="upper-footer-col1">
+              <h4 class="upper-footer-col1-title">Ready To Go?</h4>
+              <p class="upper-footer-col1-text">
+                If there are question you want to ask, we will answer all your
+                question.
+              </p>
+              <div class="upper-footer-col1-search">
+                <input type="text" class="upper-footer-col1-input1" />
+                <a href="#" class="upper-footer-col1-link">
+                  <svg
+                    class="upper-footer-col1-svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.1416 5.64258L24.3127 11.8137L18.1416 17.9848"
+                      stroke="#111617"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1.68629 11.8137H24.3137"
+                      stroke="#111617"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
 
+            <div class="upper-footer-col2">
+              <h6 class="upper-footer-col2-title">Navigate</h6>
+              <ul class="upper-footer-col2-list">
+                <li class="upper-footer-col2-item">
+                  <a href="#" class="upper-footer-col2-item-link"> Home </a>
+                </li>
+                <li class="upper-footer-col2-item">
+                  <a href="#" class="upper-footer-col2-item-link"> Speakers </a>
+                </li>
+                <li class="upper-footer-col2-item">
+                  <a href="#" class="upper-footer-col2-item-link"> About </a>
+                </li>
+                <li class="upper-footer-col2-item">
+                  <a href="#" class="upper-footer-col2-item-link"> Contact </a>
+                </li>
+              </ul>
+            </div>
 
+            <div class="upper-footer-col3">
+              <h6 class="upper-footer-col3-title">Speakers</h6>
+              <ul class="upper-footer-col3-list">
+                <li class="upper-footer-col3-item">
+                  <a href="#" class="upper-footer-col3-item-link">
+                    Jenny Wilson
+                  </a>
+                </li>
+                <li class="upper-footer-col3-item">
+                  <a href="#" class="upper-footer-col3-item-link">
+                    Savannah Nguyen
+                  </a>
+                </li>
+                <li class="upper-footer-col3-item">
+                  <a href="#" class="upper-footer-col3-item-link">
+                    Arlene McCoy
+                  </a>
+                </li>
+                <li class="upper-footer-col3-item">
+                  <a href="#" class="upper-footer-col3-item-link">
+                    Darrell Steward
+                  </a>
+                </li>
+              </ul>
+            </div>
 
+            <div class="upper-footer-col4">
+              <h6 class="upper-footer-col4-title">Connect</h6>
+              <ul class="upper-footer-col4-list">
+                <li class="upper-footer-col4-item">
+                  <a href="#" class="upper-footer-col4-item-link">
+                    Customer Support
+                  </a>
+                </li>
+                <li class="upper-footer-col4-item">
+                  <a href="#" class="upper-footer-col4-item-link">
+                    Event Promoter
+                  </a>
+                </li>
+                <li class="upper-footer-col4-item">
+                  <a href="#" class="upper-footer-col4-item-link"> Facebook </a>
+                </li>
+                <li class="upper-footer-col4-item">
+                  <a href="#" class="upper-footer-col4-item-link"> Twitter </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!--& End Footer Section -->
 
-
-<script src="./js/index.js"></script>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
-
-
-
