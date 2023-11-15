@@ -3,14 +3,21 @@
     .landing__title,.landing__text,.landing__btns,.date__subtitle,.date__title{
         margin-left: 1rem;
     }
-
+    /*! ////////// */
+    .navbar__btn-link{
+        margin-right: 1rem;
+    }
+    .navbar__logo{
+        margin-left: 1rem;
+    }
+    /*! ////////// */
     .event-detail__left{
         margin-left: 2rem;
     }
     .event-detail__right{
         margin-right: 2rem;
     }
-
+    /*! ////////// */
     .upper-footer__wrapper,.sub-footer__wrapper{
         margin-right: 2rem;
         margin-left: 2rem;
@@ -53,7 +60,6 @@
         width: 20rem;
         
     }
-
     .event-detail__diary{
         margin-left: 1rem;
     }
@@ -66,6 +72,7 @@
     .landing__title{
         font-size: 2rem;
     }
+    /*! ////////// */
     .speakers__wrapper{
         flex-direction: column;
     }
@@ -87,6 +94,7 @@
     .header{
         height: 74rem;
     }
+    /*! ////////// */
     .landing{
         flex-direction: column-reverse;
     }
@@ -101,6 +109,7 @@
     .landing__btn{
         margin-bottom: 1rem;
     }
+    /*! ////////// */
     .date{
         margin-top: 2rem;
     }
@@ -113,13 +122,7 @@
     .date__timer{
         margin-bottom: 1rem;
     }
-
-    /* .join-tech__box{
-        flex-direction: column;
-    }
-    .join-tech__box-left{
-        margin-bottom: 2rem;
-    } */
+    /*! ////////// */
     .join-tech__wrapper{
         flex-direction: column;
     }
@@ -188,6 +191,7 @@
         margin-right: 2rem;
         display: none;
     }
+    /*! ////////// */
     .res-menu{
         display: block;
         margin-right: 2rem;
@@ -195,6 +199,7 @@
     .register-btn{
         display: block;
     }
+    /*! ////////// */
     .navbar__logo{
         margin-left: 1rem;
     }
@@ -208,9 +213,10 @@
         margin-bottom: 2rem;
         text-align: center;
     }
-
-
-    
+    /*! ////////// */
+    .landing__right-image{
+        width: 12rem;
+    }
 }
 
 @media screen and (max-width: 745px) { 
@@ -230,9 +236,6 @@
     .event-detail__contents-col1{
         margin-right: 2rem;
     }
-    .event-detail__contents-col1-box-shape::after{
-        /* height: 2rem; */
-    }
     .event-detail__diary{
         flex-direction: column;
         margin-left: 2rem;
@@ -249,21 +252,12 @@
     }
 }
 
-@media screen and (max-width: 635px) { 
-
-}
-
-@media screen and (max-width: 617px) { 
-
-}
-
 @media screen and (max-width: 576px) { 
     .landing__play-btn{
         flex-direction: column;
         width: 10rem;
     }
-
-
+    /*! ////////// */
     .sub-footer__wrapper{
         flex-direction: column;
     }
@@ -273,6 +267,7 @@
         margin-bottom: 2rem;
     }
 }
+
 @media screen and (max-width: 521px) { 
     .join-tech__wrapper-left-img{
         width: 20rem;
@@ -297,10 +292,6 @@
     .header{
         height: 94rem;
     }
-
-    .tickets__cards{
-        /* margin-left: 2rem; */
-    }
     .participant__content-right-btns{
         margin-left: 8rem;
     }
@@ -318,14 +309,14 @@
     .event-detail__contents-col3{
         margin-top: 1rem;
     }
-
+    /*! ////////// */
     .tickets__cards{
         width: 18rem;
     }
     .ticket__btn{
         width: 12rem;
     }
-
+    /*! ////////// */
     .upper-footer-col1-input1{
         padding: 1rem 2rem;
     }
@@ -337,12 +328,15 @@
     .join-tech__wrapper-left-img{
         width: 14rem;
     }
+    /*! ////////// */
     .landing__title{
         font-size: 1.5rem;
     }
+    /*! ////////// */
     .speakers__wrapper-image1,.speakers__wrapper-image2{
         width: 17rem;
     }
+    /*! ////////// */
     .event-detail__img{
         margin-right: 2rem;
         width: 12rem;
@@ -350,16 +344,20 @@
     .event-detail__btn{
         width: 8rem;
     }
+    /*! ////////// */
     .landing__play-btn{
         width: 8rem;
     }
+    /*! ////////// */
     .speakers__wrapper-image1,.speakers__wrapper-image2{
         background-position: center;
         width: 14rem;
     }
+    /*! ////////// */
     .event-detail__img{
         margin-right: 3rem;
     }
+    /*! ////////// */
     .participant__content-right-btns{
         margin-left: 6rem;
     }
@@ -367,12 +365,35 @@
 }
 
 
+@media screen and (max-width: 290px) {
+    .participant__content-left-img{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .participant__content-right-comma{
+        top: -4;
+    }
+    .participant__content-right-text{
+        margin-left: 5rem;
+    }
+    .participant__content-right-btns,.participant__content-right-name{
+        margin-left: 4rem;
+    }
+    .participant__content-right-job{
+        margin-left: 3.8rem;
+    }
+    /*! ////////// */
+    .join-tech__wrapper-left-img{
+        margin-top: 8rem;
+    }
+}
+
 @media screen and (max-width: 280px) {
     .upper-footer-col1-link{
         left: 10.8rem;
     }
 }
-
 
 @media screen and (max-width: 310px) {
     .tickets__cards{
@@ -381,16 +402,14 @@
     .ticket__btn{
         width: 12rem;
     }
-    .card__desc{
-        font-size: 13px;
-    }
+    /*! ////////// */
     .ticket__btn{
         width: 10rem;
     }
     .tickets__card{
         margin-left: 1rem;
     }
-
+    /*! ////////// */
     .event-detail__text{
         font-size: 1rem;
     }
@@ -398,9 +417,12 @@
     .sub-footer__text{
         font-size: 0.8rem;
     }
-
+    /*! ////////// */
     .upper-footer-col1-link{
         left: 11rem;
+    }
+    .card__desc{
+        font-size: 13px;
     }
 
 }
@@ -411,6 +433,7 @@
     .join-tech__wrapper-left-img{
         width: 10rem;
     }
+    /*! ////////// */
     .tickets__cards{
         margin-left: 4rem;
         margin-right: 4rem;
